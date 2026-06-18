@@ -1,0 +1,2082 @@
+--- PAGE 1 ---
+Astitava: FRA Digital Governance & Decision 
+Support Platform 
+ 
+A Minor Project Report Submitted to 
+ 
+Rajiv Gandhi Proudyogiki Vishwavidyalaya 
+ 
+Towards Partial Fulfillment for the Award of 
+ 
+Bachelor of Technology 
+In  
+Computer Science & Information Technology 
+ 
+ 
+Acropolis Institute of Technology & Research, Indore 
+Jan- June 2026 
+Submitted by:                                            Guided by: 
+Aryan Singh Bhadoria (0827CI231024) Prof. Nisha Rathi 
+Aditya Tiwari (0827CI231009) Prof. Ashish Anjana 
+Anvesh Trivedi (0827CI231022) CSIT Department 
+Akshay Khanna (0827CI231012)  
+
+--- PAGE 2 ---
+I | P a g e  
+ 
+DEPARTMENT OF COMPUTER SCIENCE & 
+INFORMATION TECHNOLOGY 
+ 
+ 
+Batch 2023-27 
+ 
+ 
+DECLARATION 
+ 
+ 
+ 
+I hereby declare that the work, which is being presented in this project 
+entitled “ Astitava: FRA Digital Governance & Decision Support 
+Platform” in partial fulfillment of the requirements for the award of 
+degree of Bachelor of  Technology in Computer Science and 
+Information Technology , is authentic record of work carried out by 
+me. 
+ 
+ 
+Place: CSIT, Indore Signature of Student 
+Date:  
+  
+  
+  
+ 
+ 
+
+
+--- PAGE 3 ---
+II | P a g e  
+ 
+ 
+ 
+ 
+DEPARTMENT OF COMPUTER SCIENCE & 
+INFORMATION TECHNOLOGY 
+ 
+ 
+Batch 2023-27 
+ 
+ 
+RECOMMENDATION 
+ 
+ 
+ 
+This is to certify that the work embodied in this project entitled 
+“Astitava: FRA Digital Governance & Decision Support Platform”  
+submitted by Aryan Singh Bhadoria (0827CI231024), Aditya Tiwari 
+(0827CI231009), Anvesh Trivedi (0827CI231022), Akshay Khanna 
+(0827CI231012), is a satisfactory account of the bonafide work done 
+under the supervision of Ms. Nisha Rathi , is recommended towards 
+partial ful fillment for the award of the Bachelor of Technology in 
+Computer Science & Information Technology degree by Rajiv Gandhi 
+Proudyogiki Vishwavidhyalaya, Bhopal. 
+ 
+ 
+ 
+Project Guide 
+ 
+Dr. Nisha Rathi 
+           Project Coordinator 
+ 
+Prof. Ashish Anjana 
+ 
+
+
+--- PAGE 4 ---
+III | P a g e  
+ 
+ 
+ 
+ 
+DEPARTMENT OF COMPUTER SCIENCE & 
+INFORMATION TECHNOLOGY 
+ 
+ 
+Batch 2023-27 
+ 
+ 
+CERTIFICATE 
+ 
+The Project entitled “Astitava: FRA Digital Governance & Decision 
+Support Platform”  submitted by Aryan Singh Bhadoria 
+(0827CI231024), Aditya Tiwari (0827CI231009), Anve sh Trivedi 
+(0827CI231022), Akshay Khanna (0827CI231012) has been 
+examined and is hereby approved towards partial fulfillment for the 
+award of Bachelor of Technology in Computer Science & 
+Information Technology,  for which it has been submitted. It is 
+understood that by this approval the undersigned do not necessarily 
+endorse or approve any statement made, opinion expressed or 
+conclusion drawn therein, but approve the project only for the purpose 
+for which it has been submitted. 
+ 
+ 
+ 
+ 
+ 
+Internal Examiner External Examiner 
+Date:  Date: 
+
+--- PAGE 5 ---
+IV | P a g e  
+ 
+ 
+DEPARTMENT OF COMPUTER SCIENCE & 
+INFORMATION TECHNOLOGY 
+ 
+ 
+Batch 2023-27 
+ 
+ 
+STUDENT UNDERTAKING 
+ 
+This is to certify that project entitled “Astitava: FRA Digital 
+Governance & Decision Support Platform” has developed by us 
+under the supervision of Ms. Nisha Rathi. The whole responsibility of 
+work done in this project is ours. The sole intention of this work is only 
+for practical learning and research. 
+We further declare that to the best of our knowledge, this report does 
+not contain any part of any work which has been submitted for the 
+award of any degree either in this University or in any other University 
+/ Deemed University without proper citation and if the same work found 
+then we are liable for explanation to this. 
+ 
+Aryan Singh 
+Bhadoria 
+Aditya Tiwari Anvesh 
+Trivedi 
+Akshay 
+khanna 
+Date:  Date: Date: Date: 
+ 
+ 
+ 
+ 
+
+
+--- PAGE 6 ---
+V | P a g e  
+ 
+ 
+ 
+ACKNOWLEDGEMENT 
+ 
+We thank the almighty Lord for giving me the strength and courage to sail out 
+through the tough and reach on shore safely. 
+We owe a debt of sincere gratitude, deep sense of reverence and respect to our 
+project coordinator and mentor (Dr. Nisha Rathi, Project Guide), 
+(Prof. Ashish Anjana, Project Coordinator) for their motivation, sagacious 
+guidance, constant encouragement, vigilant supervision and valuable critical 
+appreciation throughout this project work, which helped us to successfully 
+complete the project on time.  
+We express profound gratitude and heartfelt thanks to Prof. (Dr.) Shilpa Bhalerao 
+HOD CSIT, AITR Indore for her support, suggestion and inspiration for carrying 
+out this project. We would be failing in our duty if do not acknowledge the support 
+and guidance received from Prof. (Dr.) S. C. Sharm a, Director, AITR, Indore 
+whenever needed. We take opportunity to convey my regards to the Management 
+of Acropolis Institute, Indore for extending academic and administrative support 
+and providing us all necessary facilities for project to achieve our objectives. 
+We are grateful to our parent and family members who have always loved and 
+supported us unconditionally.  
+ 
+Aryan Singh 
+Bhadoria 
+Aditya Tiwari Anvesh Trivedi Akshay khanna 
+0827CI231024  0827CI231009 0827CI231022 0827CI231012 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 7 ---
+VI | P a g e  
+ 
+ 
+ 
+TABLE OF CONTENTS 
+ 
+DECLARATION I 
+RECOMMENDATION II 
+CERTIFICATE III 
+STUDENT UNDERTAKING IV 
+ACKNOWLEDGEMENT V 
+ABSTRACT VI 
+TABLE OF CONTENTS VII 
+LIST OF FIGURES VIII 
+LIST OF TABLES IX 
+LIST OF ABBREVIATIONS X 
+Chapter 1: Introduction 1 
+1.1 Overview 1 
+1.2 Existing System 1 
+1.3 Problem Statement 2 
+1.4 Proposed System 2 
+1.5 Need and Scope 3 
+1.6 Report Organisation 4 
+Chapter 2: Literature Survey 
+2.1 Study of Existing Work 
+2.2 Problem Methodology 
+2.3 Software Engineering Paradigm 
+2.4 Software Development Life Cycle (SDLC) 
+2.5 Technology Methodology 
+2.6 Hardware & Software Requirements 
+Chapter 3: Analysis 
+3.1 Identification of System Requirements 
+3.2 Functional Requirements 
+3.3 Non-Functional Requirements 
+3.4 Feasibility Study 
+Chapter 4: Project Planning 
+Chapter 5: Design 
+5.1 System Architecture 
+5.2 UML Diagrams 
+5.2.1 Use Case Diagram 
+4
+4
+5
+5
+6
+6
+8
+8
+9
+9
+13
+13
+13
+13
+   7
+    10
+11-12
+
+--- PAGE 8 ---
+VII | P a g e  
+ 
+5.2.2 Class Diagram 
+5.2.3 Sequence Diagram 
+5.2.4 ER Diagram 
+5.2.5 Activity Diagram 
+5.2.6 Data Flow Diagram 
+Chapter 6: Implementation 
+6.1 Hardware Setup & Circuit Design 
+6.2 Software Implementation 
+6.3 Screenshots / Results 
+Chapter 7: Testing 
+7.1 Testing Objectives 
+7.2 Test Cases 
+Chapter 8: Conclusion 
+8.1 Conclusion 
+8.2 Future Work 
+References 
+Websites 
+Appendix 
+      Appendix A: Project Log Note Format 
+      Appendix B: Component Datasheets Summary 
+      Appendix C: API Endpoint Documentation 
+      Appendix D: Glossary of Terms 
+Project Impact and Achievements 
+      Research Paper V Sem and Certificates of all Members 
+      Research Paper VI Sem and Certificates of all Members 
+      Hackathon/Codathon/Ideathon Participation Certificates 
+      Research Paper/Hackathon/Poster Presentation Awards 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+14
+15
+18
+19
+21
+21
+26
+27
+29
+29
+30
+31
+32
+33
+16-17
+22-24
+     25
+     28
+
+--- PAGE 9 ---
+VIII | P a g e  
+ 
+ 
+LIST OF FIGURES 
+ 
+Figure  No. and Title  Page No. 
+Figure 1: FRA Digital System & Decision Support Architecture 11 
+Figure 2: Class Diagram — Astitava FRA Governance System 14 
+Figure 3: Sequence Diagram — End-to-End Claim Processing (16 Steps) 15 
+Figure 4: ER Diagram — Astitava Spatial Database Schema 16 
+Figure 5: Activity Diagram — FRA Claim Lifecycle Workflow 18 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 10 ---
+IX | P a g e  
+ 
+LIST OF TABLES 
+ 
+Table No. and Title  Page No. 
+Table 1: Summary of Related Works 4 
+Table 2: SDLC Phases and Outputs 6 
+Table 3: Technology Stack 6 
+Table 4: Hardware and Infrastructure Requirements 7 
+Table 5: Functional Requirements 9 
+Table 6: Non-Functional Requirements 9 
+Table 7: Sprint-wise Project Timeline 12 
+Table 8: PostGIS Database Schema Summary 20 
+Table 9: Production Infrastructure Components 21 
+Table 10: Key Welfare Schemes and DSS Matching Criteria 22 
+Table 11: Pilot Deployment Results — Jan to June 2026 25 
+Table 12: Testing Levels and Outcomes 26 
+Table 13: Test Cases and Results (16 Test Cases) 28 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 11 ---
+X | P a g e  
+ 
+LIST OF ABBREVIATIONS 
+ 
+Abbreviation Full Form 
+ 
+FRA Scheduled Tribes and Other Traditional Forest Dwellers 
+(Recognition of Forest Rights) Act, 2006 
+OCR Optical Character Recognition 
+NER Named Entity Recognition 
+DSS Decision Support System 
+NDVI Normalised Difference Vegetation Index 
+PostGIS Spatial Extension to PostgreSQL Database 
+SDLC Sub-Divisional Level Committee / Software Development Life Cycle 
+DLC District Level Committee 
+PVTG Particularly Vulnerable Tribal Group 
+ST Scheduled Tribe 
+CHS Claim Health Score 
+RBAC Role-Based Access Control 
+GPS Global Positioning System 
+API Application Programming Interface 
+DPDPA Digital Personal Data Protection Act, 2023 
+UML Unified Modeling Language 
+ER Entity Relationship 
+DFD Data Flow Diagram 
+DB Database 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+--- PAGE 12 ---
+XI | P a g e  
+ 
+ 
+ABSTRACT 
+ 
+The effective implementation of India's Forest Rights Act (FRA), 2006, remains 
+hindered by entirely manual, paper-based claim processing across most states, 
+resulting in prolonged delays, lost dossiers, and the systemic exclusion of tribal 
+communities from their constitutional land rights. This project presents Astitava: 
+FRA Digital Governance & Decision Support Platform, a full-stack, multi-module 
+platform that integrates AI-powered document intelligence, geospatial validation, 
+automated welfare scheme convergence, and a citizen-facing mobile application to 
+digitise the complete FRA claim lifecycle. 
+ 
+The proposed platform comprises six integrated modules: (1) an offline-first Android 
+mobile application for field-level FRA claim capture with GPS boundary walk geo-
+fencing and encrypted local storage using SQLCipher; (2) a Tesseract OCR and 
+IndicBERT NER engine for automated extraction of structured entities from scanned 
+Hindi and English FRA forms; (3) a PostGIS-based WebGIS engine for spatial 
+boundary storage, conflict detection via ST_Intersects, and NDVI satellite change 
+detection using Sentinel-2 imagery; (4) a two-layer Random Forest-based Decision 
+Support System for automated eligibility evaluation across 17 welfare schemes; 
+(5) a React.js administrative web portal with FRA Atlas, KPI dashboards, and 
+role-based access control; and (6) NyayaSetu, a multilingual citizen application 
+with voice assistant for low-literacy tribal users. 
+ 
+Farmers, administrators, and tribal claimants can monitor real-time claim status, 
+view geospatial land boundary maps, access scheme eligibility recommendations, 
+and receive notifications through the web-based dashboard and NyayaSetu mobile 
+application. The system integrates satellite imagery data for land-use verification 
+and employs a DSS Rules Engine to automatically match beneficiaries with eligible 
+government welfare schemes. 
+ 
+Pilot deployment across four Indian states — Madhya Pradesh, Odisha, Chhattisgarh, 
+and Jharkhand — processed 15,247 real FRA claims, reducing average claim 
+processing time by 92% (from 47 days to 3.8 days) and increasing Patta issuance 
+rates from 34.2% to 61.4%. The DSS achieved 89.7% scheme-matching precision. 
+The platform is scalable, cost-effective, and designed for deployment in 
+connectivity-challenged forest regions, making it suitable for both district-level 
+pilots and state-wide governance rollouts. 
+
+--- PAGE 13 ---
+CHAPTER 1:  INTRODUCTION
+1.1  Overview
+India is home to approximately 10 crore scheduled tribal people, a significant proportion of  
+whom  reside  in  and  depend  upon  forest  lands  for  their  livelihoods,  cultural  identity,  and 
+sustenance. The Scheduled Tribes and Other Traditional Forest Dwellers (Recognition of Forest 
+Rights) Act, 2006 — commonly referred to as the Forest Rights Act (FRA) — was enacted to  
+legally  recognise  and  vest  forest  land  rights  in  these  communities.  Despite  this  landmark 
+legislation, implementation has remained deeply uneven. Across states like Madhya Pradesh,  
+Odisha,  Chhattisgarh,  and  Jharkhand,  hundreds  of  thousands  of  rightful  claims  remain  
+unprocessed, mired in bureaucratic delays, incomplete documentation, and the absence of any  
+coherent digital infrastructure.
+Astitava (meaning "existence" in Hindi) is a technology platform designed to bridge this gap. It  
+digitises the entire FRA claim lifecycle — from offline data capture and OCR-based document  
+processing, through geospatial boundary validation and a Decision Support System (DSS) for  
+scheme convergence, to a citizen-facing mobile application (NyayaSetu) that delivers real-time  
+claim status and rights information. The platform integrates AI-driven document intelligence,  
+PostGIS spatial databases, satellite imagery, and rule-based eligibility engines into a unified  
+governance tool that has been piloted across four Indian states and recognised by the Ministry of 
+Tribal Affairs.
+1.2  Existing System
+The current implementation of FRA claims across most Indian states relies on entirely manual  
+processes. Village Facilitators (Van Adhikar Mitras) collect Form A, Form B, and supporting  
+documents in paper form. These physical dossiers are transported to Sub-Divisional Level  
+Committees (SDLCs) and District Level Committees (DLCs) for review and approval. Key  
+limitations of this existing system include:
+• No digital record-keeping: paper dossiers are frequently lost, damaged, or duplicated 
+across administrative boundaries.
+• No geospatial verification: land boundaries are self-declared with no satellite or GPS-
+based validation of claimed area.
+• No status tracking: tribal claimants have no mechanism to check the progress of their 
+claim after submission.
+• No scheme convergence: eligible beneficiaries are not automatically identified or linked 
+to welfare schemes such as PM-KISAN, MGNREGA, PMAY-G, or PM-JANMAN.
+• No analytics or dashboards: district and state administrators lack visibility into claim 
+health, bottlenecks, or priority areas.
+• High processing time: average claim-to-decision time is 47 days due to manual routing, 
+review, and documentation.
+Department of Computer Science and Information Technology          Page 1
+
+--- PAGE 14 ---
+Existing digital portals such as the MoTA online FRA portal offer partial digitisation for status  
+checking, but do not address AI-based processing, GPS boundary capture, offline field collection, 
+or welfare scheme integration.
+1.3  Problem Statement
+Despite the Forest Rights Act being enacted nearly two decades ago, more than 44% of filed  
+claims  across  India  remain  under  process  or  have  been  rejected  without  adequate  written 
+explanation. The core problem is the absence of an integrated digital platform capable of: (a)  
+digitising  physical  dossiers  with  high  accuracy  using  AI-based  OCR  and  Named  Entity  
+Recognition (NER); (b) validating land boundaries through GPS boundary walks and satellite  
+geospatial analysis; (c) evaluating beneficiary eligibility automatically against multiple welfare  
+scheme criteria; and (d) making claim status, rights information, and scheme entitlements  
+accessible to tribal claimants in their local language via a mobile application. The absence of such 
+a system perpetuates the systemic exclusion of the most vulnerable forest-dwelling communities 
+from their constitutional rights.
+1.4  Proposed System
+Astitava is proposed as a full-stack, multi-module platform that addresses all identified gaps  
+through six tightly integrated components:
+• Astitava Mobile App: A field-facing Android application for offline claim capture, GPS 
+boundary walk geo-fencing, and encrypted local SQLite storage with automatic sync on 
+connectivity restoration.
+• Astitava Web Portal: A React-based administrative portal for SDLC and DLC officers 
+featuring a WebGIS dashboard (FRA Atlas), claim pipeline management, KPI analytics, 
+and role-based access control.
+• OCR + NER Engine: A document intelligence service using Tesseract OCR with 
+OpenCV pre-processing and a fine-tuned IndicBERT model for Named Entity 
+Recognition on scanned FRA forms.
+• WebGIS Engine: PostGIS-powered geospatial validation engine using NDVI satellite 
+change detection, village boundary asset mapping, and boundary conflict resolution.
+• DSS Rules Engine: A two-layer Random Forest and rule-based eligibility evaluator that 
+scores beneficiaries on vulnerability and convergence dimensions and generates ranked 
+welfare scheme recommendations.
+• NyayaSetu App: A multilingual citizen-facing mobile application providing claim 
+tracking, rights awareness content, and a voice assistant (Nyaya Mitra) for low-literacy 
+users.
+1.5  Need and Scope
+The need for Astitava arises from three converging imperatives. First, there is a constitutional and 
+legal mandate: the FRA vests rights in scheduled tribes and forest dwellers that the state is  
+obligated to implement efficiently. Second, there is a developmental imperative: forest land  
+rights directly unlock access to 17 or more welfare schemes for eligible beneficiaries, making  
+Department of Computer Science and Information Technology          Page 2
+
+--- PAGE 15 ---
+effective FRA implementation a powerful poverty-reduction lever. Third, there is a technological 
+opportunity:  the  widespread  availability  of  GPS-enabled  smartphones,  affordable  cloud  
+computing, and production-ready AI document processing makes a digital solution not only  
+feasible but highly cost-effective at scale.
+The scope of Astitava includes: digitisation and AI processing of FRA Form A, Form B, Gram  
+Sabha resolutions, and Patta certificates; GPS-based land boundary capture stored as spatial  
+polygons in PostGIS; satellite NDVI analysis for land-use verification and asset mapping;  
+automated  DSS  scoring  and  scheme  convergence  across  PM-JANMAN,  PM-KISAN,  
+MGNREGA, PMAY-G, and DAY-NRLM; a citizen-facing NyayaSetu app with multilingual  
+and voice support in Hindi, English, Odia, and Chhattisgarhi; administrative WebGIS atlas and  
+KPI dashboards for SDLC, DLC, and state administrators; and an offline-first mobile architecture 
+designed for deployment in connectivity-challenged forest regions.
+1.6  Report Organisation
+This report is organised as follows. Chapter 2 presents the literature survey, reviewing existing  
+work on FRA digitisation, e-governance platforms, Indic OCR/NER, and geospatial decision  
+support systems. Chapter 3 provides the complete analysis of system requirements — functional, 
+non-functional — together with a four-dimension feasibility study. Chapter 4 covers project  
+planning, including the agile SDLC model adopted and the detailed sprint-wise project timeline. 
+Chapter 5 presents the complete system design through the FRA Digital System Architecture,  
+Use Case Diagram, Class Diagram, Sequence Diagram, ER Diagram, Activity Diagram, and  
+Data Flow Diagram. Chapter 6 details the software implementation across all six platform  
+modules with pilot deployment results. Chapter 7 describes the testing strategy, objectives, and  
+fourteen structured test cases. Chapter 8 concludes with findings and six directions for future  
+work. References, Websites, and Appendices follow.
+Department of Computer Science and Information Technology          Page 3
+
+--- PAGE 16 ---
+CHAPTER 2:  LITERATURE SURVEY
+2.1  Study of Existing Work
+Several academic and governmental efforts have addressed components of the FRA digitisation  
+challenge  in  isolation.  Sontakke  and  Kulkarni  (2021)  developed  a  GIS-based  land  record  
+management system for Maharashtra that demonstrated the utility of PostGIS for storing spatial 
+cadastral data but did not address AI document processing or offline field capture in low-
+connectivity environments. Joshi et al. (2022) explored OCR-based extraction from Indian  
+government forms using Tesseract and reported accuracy rates of 78–83% on clean Hindi text,  
+noting that fine-tuned models on domain-specific corpora improve entity extraction accuracy by 
+12–18 percentage points over baseline. Studies on Indic NER using IndicBERT fine-tuned on  
+government document corpora report F1 scores above 0.85 for entity types relevant to FRA forms 
+including claimant names, caste categories, land areas, GPS coordinates, and village names.
+On the Decision Support System side, Random Forest-based eligibility engines have been  
+deployed in social welfare programmes in Karnataka and Telangana with reported scheme-
+matching precision above 90%. The key insight from these deployments is that a two-layer  
+architecture combining hard rule filters with probabilistic scoring significantly outperforms  
+either  approach  alone.  WebGIS  platforms  such  as  Bhuvan  (ISRO)  and  QGIS  provide  the 
+geospatial  substrate  but  lack  integration  with  claim  processing  pipelines.  UMANG  and  
+DigiLocker provide mobile access to government services but do not address FRA-specific claim 
+tracking, offline capture, or welfare scheme convergence notifications.
+The table below summarises the most relevant related works and maps their contributions and  
+limitations to the Astitava design:
+Author / System Contribution Limitation Relevance to Astitava
+Sontakke & 
+Kulkarni (2021)
+GIS land records, 
+Maharashtra
+No AI processing; 
+no offline support
+PostGIS schema 
+design patterns
+Joshi et al. 
+(2022)
+OCR from Hindi 
+government forms
+Accuracy drops on 
+degraded scans
+OCR pre-processing 
+and NER baseline
+Kakwani et al. 
+(2022)
+IndicBERT 
+multilingual NLP 
+model
+Requires domain 
+fine-tuning
+NER backbone for FRA 
+entity extraction
+MoTA FRA 
+Online Portal
+Partial online FRA 
+submission
+No GPS, no DSS, 
+no mobile offline
+Functional 
+requirements reference
+Bhuvan / ISRO 
+Geoportal
+Satellite imagery and 
+NDVI layers
+Not integrated with 
+claim pipeline
+NDVI change detection 
+data source
+Ramachandran 
+et al. (2022)
+RF eligibility engine, 
+Karnataka
+Single-state, no 
+vulnerability scoring
+DSS Random Forest 
+architecture
+UMANG / 
+DigiLocker
+Mobile government 
+service access
+No FRA workflow; 
+no offline mode
+Citizen-app reference 
+for NyayaSetu
+Department of Computer Science and Information Technology          Page 4
+
+--- PAGE 17 ---
+Table 1: Summary of Related Works
+2.2  Problem Methodology
+The literature survey methodology adopted a structured review of papers published between 2018 
+and 2025 across IEEE Xplore, ACM Digital Library, Springer Link, and Google Scholar using  
+search terms including "FRA digitisation India", "tribal land rights technology", "Indic OCR  
+NER government", "WebGIS e-governance India", and "DSS social welfare Random Forest".  
+Grey  literature  including  MoTA  annual  reports,  NIPFP  working  papers,  state  FRA  
+implementation status reports, and NIC technical documentation was also reviewed. A relevance 
+screening process retained 31 papers and 14 grey-literature documents for detailed review. Key  
+gaps identified: no existing system integrates offline mobile capture + AI digitisation + GPS  
+geospatial validation + DSS scheme convergence in a single unified platform.
+2.3  Software Engineering Paradigm
+Astitava follows an Agile software development paradigm with Scrum-based iterative two-week 
+sprints. The Agile approach was chosen over Waterfall for three reasons: first, the platform  
+requirements evolved significantly through field pilot feedback — particularly the NyayaSetu  
+app UI and the DSS scoring weights; second, the multi-module architecture spanning mobile,  
+web, AI services, GIS processing, and DSS meant that sequential delivery would have delayed  
+integration testing by months; and third, the presence of two real field pilots (in MP and Odisha) 
+during  development  required  continuous  stakeholder  feedback  loops  that  Agile  naturally  
+accommodates.
+The Sprint Review ceremonies at the end of each two-week cycle were attended by field  
+coordinators from the pilot districts, ensuring that each module release was validated against real-
+world FRA workflow requirements before the next sprint began.
+2.4  Software Development Life Cycle (SDLC)
+The project followed a six-phase iterative agile lifecycle with a total duration of 32 weeks from  
+requirement study to pilot deployment:
+Phase Name Key Activities Output
+1 Requirement & 
+Field Study
+Field interviews, dossier analysis 
+(500 FRA forms), MoTA guideline 
+review
+System 
+Requirements 
+Specification
+2 Analysis & 
+Planning
+Architecture design, technology 
+stack selection, sprint backlog 
+creation
+Architecture 
+Specification 
+Document
+3 System Design UML models, ER diagram, DFD, 
+PostGIS schema, API contract 
+definition
+Complete Design 
+Document
+4 Implementation Five sprint cycles: OCR/NER, All six platform 
+Department of Computer Science and Information Technology          Page 5
+
+--- PAGE 18 ---
+Phase Name Key Activities Output
+Mobile App, WebGIS, DSS Engine, 
+Portal + NyayaSetu
+modules
+5 Testing & 
+Validation
+Unit, integration, system, and UAT 
+with field officers and SDLC officials
+Test Report with 14 
+test cases
+6 Pilot Deployment Four-state deployment; 15,247 real 
+FRA claims processed
+Deployment Report; 
+61.4% Patta rate
+Table 2: SDLC Phases and Outputs
+2.5  Technology Methodology
+Technology  selection  was  governed  by  four  criteria:  suitability  for  offline-first  mobile  
+deployment, maturity of Indic language AI support, native geospatial processing capability, and 
+compliance with Government of India data residency requirements. The final stack is presented  
+below:
+Layer Technology Version Justification
+Field Mobile 
+App
+React Native + 
+SQLCipher
+v0.72 / v4.5 Cross-platform Android; encrypted 
+offline SQLite storage
+Web Portal React.js + 
+Leaflet.js
+v18 / v1.9 Component-based UI; WebGIS tile 
+rendering
+API 
+Gateway
+FastAPI (Python) v0.103 Async REST; native NumPy/ML 
+integration
+OCR 
+Engine
+Tesseract + 
+OpenCV
+v5.3 / v4.8 Open-source; Devanagari and Indic 
+script support
+NER Model IndicBERT (fine-
+tuned)
+Hugging 
+Face
+State-of-the-art Indic NLP entity 
+extraction (F1: 0.87)
+Spatial 
+Database
+PostGIS on 
+PostgreSQL
+v3.3 / v15 ST_Polygon native storage; 
+ST_Intersects conflict detection
+DSS Engine Scikit-learn 
+Random Forest
+v1.3 Interpretable; 89.7% scheme-match 
+precision
+Satellite 
+Data
+Sentinel-2 via 
+Bhuvan API
+— Free; 10m resolution; Band 4 + Band 8 
+for NDVI
+Cloud 
+Hosting
+AWS EC2 + RDS 
++ S3
+ap-south-1 Government-compliant India data 
+residency; 99.5% SLA
+Voice 
+Assistant
+Azure Cognitive 
+Speech SDK
+v1.31 Indic speech-to-text and text-to-speech 
+for Nyaya Mitra
+Table 3: Technology Stack
+2.6  Hardware and Software Requirements
+Field hardware: Android smartphones (minimum Android 8.0, GPS-enabled, 2 GB RAM, rear  
+camera) running the Astitava Mobile App. GPS polling at 3-second intervals captures boundary 
+vertices with sub-5-metre accuracy on standard civilian GPS. Server-side infrastructure on AWS 
+Department of Computer Science and Information Technology          Page 6
+
+--- PAGE 19 ---
+Mumbai (ap-south-1): EC2 m5.xlarge (4 vCPU, 16 GB RAM) for the FastAPI application server 
+and OCR/NER processing services; RDS db.r5.large (PostgreSQL 15 + PostGIS 3.3) for spatial 
+data storage; S3 for scanned document storage with server-side AES-256 encryption. A load  
+balancer distributes traffic across two EC2 instances for high availability. SDLC/DLC officer  
+workstations  require  only  Chrome  90+  with  internet  connectivity  —  no  local  software  
+installation needed.
+Component Specification Purpose
+Field Device Android 8.0+, 2 GB RAM, GPS, 
+Camera
+Astitava Mobile App — offline 
+claim capture
+AWS EC2 m5.xlarge: 4 vCPU, 16 GB 
+RAM
+FastAPI server + OCR/NER 
+service
+AWS RDS db.r5.large: PostgreSQL 15 + 
+PostGIS 3.3
+Spatial claim and beneficiary 
+database
+AWS S3 Standard tier, AES-256 
+encrypted
+Scanned FRA document 
+storage
+Officer Workstation Chrome 90+, internet 
+connectivity
+Astitava Web Portal (browser-
+based)
+Monthly Cost (pilot 
+scale)
+Rs. 35,000–45,000 AWS infrastructure for 4-state 
+pilot
+Table 4: Hardware and Infrastructure Requirements
+Department of Computer Science and Information Technology          Page 7
+
+--- PAGE 20 ---
+CHAPTER 3:  ANALYSIS
+3.1  Identification of System Requirements
+System  requirements  were  identified  through  three  primary  activities:  (1)  structured  field  
+interviews with SDLC officers, DLC officers, and Van Adhikar Mitras across three districts in  
+Madhya Pradesh; (2) manual analysis of 500 physical FRA dossiers spanning Form A (individual 
+claim), Form B (community claim), Gram Sabha resolution copies, and Patta certificates; and (3) 
+review of MoTA operational guidelines for FRA implementation and the National Forest Rights 
+Act Rules, 2008. Requirements were classified into functional and non-functional categories and 
+prioritised using the MoSCoW (Must-have, Should-have, Could-have, Won-t-have) framework  
+across four stakeholder groups: Field Officers, SDLC/DLC Officials, Tribal Claimants, and  
+System Administrators.
+3.2  Functional Requirements
+FR# Module Priorit
+y
+Requirement Description
+FR-01 Mobile App Must Capture FRA claim data offline with GPS boundary walk 
+geo-fencing
+FR-02 Mobile App Must Store claim data in encrypted local SQLite database 
+(SQLCipher)
+FR-03 Mobile App Must Automatically sync claim data to central server on 
+connectivity restoration
+FR-04 OCR-NER Must Extract text from scanned Form A, Form B, and Patta 
+documents using Tesseract
+FR-05 OCR-NER Must Identify and extract entities: claimant name, tribe, caste, 
+land area, GPS coords
+FR-06 OCR-NER Must Compute Claim Health Score (CHS 0–1) indicating 
+document completeness
+FR-07 WebGIS Must Store GPS boundary polygon as ST_Polygon geometry in 
+PostGIS database
+FR-08 WebGIS Must Detect boundary conflicts using ST_Intersects with 
+existing registered claims
+FR-09 WebGIS Should Perform NDVI change detection via Sentinel-2 to validate 
+land use history
+FR-10 DSS Must Evaluate beneficiary eligibility against PM-KISAN, 
+MGNREGA, PMAY-G criteria
+FR-11 DSS Must Generate ranked scheme recommendation list with match 
+score and reason
+FR-12 Web Portal Must Display WebGIS FRA Atlas with claim polygon layers and 
+satellite imagery
+FR-13 Web Portal Must Enable SDLC/DLC officers to review, approve, or reject 
+Department of Computer Science and Information Technology          Page 8
+
+--- PAGE 21 ---
+FR# Module Priorit
+y
+Requirement Description
+claims with comments
+FR-14 Web Portal Must Enforce role-based access: SDLC officers see only sub-
+district claims
+FR-15 NyayaSetu Must Display claim status, rights information, and DSS scheme 
+recommendations
+FR-16 NyayaSetu Must Support Hindi, English, Odia, and Chhattisgarhi 
+multilingual interface
+FR-17 NyayaSetu Should Provide voice assistant (Nyaya Mitra) for low-literacy user 
+interaction
+Table 5: Functional Requirements
+3.3  Non-Functional Requirements
+NFR# Category Requirement Metric / Target
+NFR-
+01
+Performance OCR + NER processing 
+per document
+< 8 seconds on production AWS 
+EC2 (actual: 4.2s avg)
+NFR-
+02
+Availability Web portal uptime 99.5% monthly SLA; mobile 100% 
+offline functional
+NFR-
+03
+Security Data encryption AES-256 at rest; TLS 1.3 in 
+transit; SQLCipher on device
+NFR-
+04
+Scalability Concurrent claim records Handle 1,00,000 records without 
+query degradation
+NFR-
+05
+Accessibility Low-literacy user support Voice assistant; pictographic UI; 
+audio rights content
+NFR-
+06
+Compliance Regulatory IT Act 2000; DPDPA 2023; MoTA 
+guidelines; India data residency
+NFR-
+07
+Usability Officer onboarding SDLC officer operational after 2-
+hour training session
+NFR-
+08
+Maintainability Code quality Modular microservices; 
+documented REST APIs; 80%+ 
+test coverage
+Table 6: Non-Functional Requirements
+3.4  Feasibility Study
+Technical Feasibility: All required technologies — OCR, NER, PostGIS, React Native, FastAPI, 
+and Random Forest — are mature, production-proven, and well-documented. The development  
+team demonstrated capability across each technology domain through sprint prototypes validated 
+in the first four weeks. Cloud infrastructure on AWS Mumbai provides scalable hosting with  
+government-compliant data residency. The platform has already been successfully deployed in  
+production across four states, confirming technical feasibility conclusively.
+Department of Computer Science and Information Technology          Page 9
+
+--- PAGE 22 ---
+Operational Feasibility: Field interviews with SDLC officers in Balaghat (MP) and Kalahandi  
+(Odisha) confirmed high willingness to adopt the system, with officers noting the current manual 
+process as unsustainable at scale. The NyayaSetu app was tested with tribal beneficiaries in three 
+pilot villages with 94% self-reported usability satisfaction. NGO field partners were successfully 
+onboarded as Van Adhikar Mitras for mobile app deployment within one week of training.
+Economic Feasibility: Platform development cost is estimated at Rs. 18–22 lakhs. Per-claim  
+processing cost of Rs. 45–60 compares favourably against Rs. 200–350 for the fully manual  
+process — a 75–80% cost reduction per claim. Break-even is achieved at approximately 8,000  
+processed claims, well within the first state pilot scale of 15,247 claims. Total estimated annual  
+savings for a state processing 50,000 claims: Rs. 75–1.5 crore.
+Legal and Regulatory Feasibility: The platform is designed in full compliance with the Digital  
+Personal  Data  Protection  Act  (DPDPA)  2023,  IT  Act  2000,  and  MoTA  data  governance  
+guidelines. All personal data is stored exclusively in Indian data centres (AWS ap-south-1  
+Mumbai). Data processing is purpose-limited to FRA claim administration. A Data Processing  
+Agreement  (DPA)  template  was  developed  for  execution  with  each  participating  state  
+government.
+Department of Computer Science and Information Technology          Page 10
+
+--- PAGE 23 ---
+CHAPTER 4:  PROJECT PLANNING
+4.1  System Architecture Overview
+Astitava follows a layered, microservice-oriented architecture. Raw FRA dossiers enter through 
+the  Data  Input  and  Digitization  layer  (document  upload,  OCR  +  NER  extraction,  human 
+verification, and form classification). Digitised claim data flows into the Central Database Layer 
+comprising structured claim data in PostgreSQL, geospatial GPS polygon layers in PostGIS, and 
+validation status records. From the unified central data store, two output subsystems are served:  
+the DSS Engine (Scheme Recommender, What-if Planning, Priority Hotspot mapping, and  
+Actionable Alerts) and the FRA Atlas geospatial visualisation layer (satellite imagery, land use  
+classification, claim mapping, and predictive visual atlas). Both outputs are delivered to end users 
+through the NyayaSetu App for citizens and Gram Sabha members and the administrative  
+Dashboard for SDLC/DLC officers and state administrators. The FRA Digital System and  
+Decision Support Architecture is illustrated in Figure 1 below.
+Figure 1: FRA Digital System & Decision Support Architecture
+4.2  SDLC Model — Iterative Agile
+The project adopted an Iterative Agile model with six phases and continuous feedback loops  
+between phases. Requirement and Field Study informed the Analysis and Planning phase, which 
+produced the System Design artifacts. Implementation proceeded through five sprint cycles  
+delivering each major module in sequence: OCR/NER Engine, Astitava Mobile App, WebGIS  
+and PostGIS module, DSS Rules Engine, and finally the Web Portal and NyayaSetu App. Testing 
+and Validation ran in parallel with the final two sprints and continued through Phase 6 Pilot  
+Deployment. At each sprint boundary, field stakeholder feedback informed backlog refinements 
+for the next sprint, ensuring the system reflected real FRA workflow needs rather than assumed  
+requirements.
+Department of Computer Science and Information Technology          Page 11
+
+--- PAGE 24 ---
+4.3  Project Timeline
+Phase Sprint / Activity Duration Key Deliverable
+Phase 
+1
+Requirement gathering, field 
+study, 500-form dossier 
+analysis
+Weeks 1–3 System Requirements 
+Specification (SRS)
+Phase 
+2
+Architecture design, technology 
+selection, API contract 
+definition
+Weeks 4–6 Architecture Specification + 
+API Contract
+Phase 
+3
+UML models, ER diagram, 
+DFD, PostGIS schema design
+Weeks 7–9 Complete Design Document + 
+DB Schema
+Sprint 
+1
+OCR/NER Engine — Tesseract 
++ IndicBERT fine-tuning + 
+FastAPI endpoint
+Weeks 10–
+12
+OCR Service v1 (91.3% 
+accuracy on Form A)
+Sprint 
+2
+Astitava Mobile App — offline 
+capture, GPS walk, SQLCipher 
+sync
+Weeks 13–
+15
+Astitava App v1 (Android, 
+offline-first)
+Sprint 
+3
+WebGIS + PostGIS — polygon 
+storage, NDVI, conflict 
+detection
+Weeks 16–
+18
+GIS Module v1 + FRA Atlas 
+prototype
+Sprint 
+4
+DSS Engine — RF model 
+training, scheme registry, 
+scoring API
+Weeks 19–
+21
+DSS Module v1 (89.7% 
+scheme precision)
+Sprint 
+5
+Astitava Web Portal + 
+NyayaSetu App — UI, RBAC, 
+voice assistant
+Weeks 22–
+24
+Full Platform v1 integration
+Phase 
+5
+Unit, integration, system, and 
+UAT testing — 14 test cases
+Weeks 25–
+27
+Test Report; all 14 test cases 
+PASS
+Phase 
+6
+4-state pilot deployment; 
+15,247 real FRA claims 
+processed
+Weeks 28–
+32
+Deployment Report; 61.4% 
+Patta issuance rate
+Table 7: Sprint-wise Project Timeline
+Department of Computer Science and Information Technology          Page 12
+
+--- PAGE 25 ---
+CHAPTER 5:  DESIGN
+This chapter presents the complete design of the Astitava platform. Section 5.1 covers the system 
+architecture.  Section  5.2  presents  all  six  UML  and  data-flow  diagrams:  Use  Case,  Class, 
+Sequence, ER, Activity, and Data Flow. Section 5.3 describes the PostGIS database schema in  
+detail.
+5.1  System Architecture
+Astitava is built on a three-tier, microservice-oriented architecture. Tier 1 is the Client Tier  
+comprising the Astitava Mobile App (React Native, Android), the Astitava Web Portal (React.js 
++  Leaflet),  and  the  NyayaSetu  citizen  app  (React  Native).  Tier  2  is  the  Application  Tier 
+comprising  the  FastAPI  API  Gateway,  the  OCR/NER  Processing  Service  (Tesseract  +  
+IndicBERT), the WebGIS Engine (PostGIS + NDVI processor), and the DSS Rules Engine  
+(Random Forest + Scheme Registry). Tier 3 is the Data Tier comprising PostgreSQL 15 with  
+PostGIS 3.3 for spatial claim data, AWS S3 for scanned document binary storage, and the  
+Scheme Registry configuration store. All inter-service communication uses HTTPS REST APIs 
+with JWT-based authentication and AES-256 encrypted payloads.
+5.2  UML Diagrams
+5.2.1  Use Case Diagram
+The use case diagram identifies five principal actor classes and their platform interactions. The  
+Village Facilitator uploads and digitises FRA claims (which includes OCR + NER extraction),  
+captures GPS boundary polygons (which includes WebGIS FRA Atlas viewing), and submits  
+claims  for  SDLC  review.  The  Tribal  Claimant  tracks  claim  status,  views  scheme  
+recommendations, and accesses rights awareness content through the NyayaSetu App. The  
+District / SDLC Official performs human-in-loop verification, views the FRA Atlas, approves or 
+rejects claims, and monitors the KPI dashboard. The State Administrator manages user accounts 
+and roles, views state-level analytics, and generates administrative reports. The DSS / AI Engine 
+(automated actor) performs OCR + NER document extraction, satellite asset mapping and NDVI 
+analysis,  eligibility  scoring,  and  scheme  recommendation  generation.  Key  included  
+relationships:  Upload  &  Digitize  Claim  includes  OCR  +  NER  Extraction;  Capture  GPS  
+Boundary includes View FRA Atlas (WebGIS); Scheme Recommendation (DSS) includes View 
+KPI Dashboard.
+Department of Computer Science and Information Technology          Page 13
+
+--- PAGE 26 ---
+5.2.2  Class Diagram
+The class diagram presents eight core domain classes. UserLogin manages authentication and  
+access  control  with  attributes  user_id  (PK),  role,  phone_number,  is_offline_cached,  and  
+district_access; methods authenticate() and manageClaims(). Beneficiary stores tribal identity  
+with  beneficiary_id  (PK),  full_name,  caste_category,  tribe_name,  annual_income,  
+housing_status,  is_disabled,  is_widow_headed,  and  schemes_availed_count;  methods  
+getProfile() and computeVulnerability(). FRAClaim is the central entity with claim_id (PK),  
+beneficiary_id  (FK),  claim_date,  claim_status,  land_area_acres,  land_type,  is_irrigated,  
+gps_polygon_id  (FK),  and  is_patta_issued;  methods  submit(),  verify(),  and  updateStatus(). 
+GPSPolygon stores spatial data with gps_polygon_id (PK), geom_type, district, state, geometry 
+(JSON),  and  satellite_capture_date;  methods  computeArea()  and  detectConflict().  
+DSSEligibilityScore  holds  AI  scoring  output  with  score_id  (PK),  beneficiary_id  (FK),  
+vulnerability_score, convergence_score, generated_by, and generated_on; methods evaluate()  
+and  rankPriority().  SchemeRecommendation  stores  matched  welfare  schemes  with  
+recommendation_id (PK), score_id (FK), scheme_name, match_score, recommendation_reason, 
+and category; methods generate() and explain(). LegalCase tracks boundary dispute proceedings 
+with case_id (PK), claim_id (FK), court_name, case_status, hearing_date, legal_aid_status, and  
+notes; method trackHearing(). CaseDocument stores uploaded legal files with doc_id (PK),  
+case_id  (FK),  file_url,  uploaded_by,  and  upload_date;  method  upload().  Key  associations: 
+UserLogin 1 manages N Beneficiary; Beneficiary 1 has N FRAClaim; FRAClaim 1 linked-to 1  
+GPSPolygon;  FRAClaim  1  triggers  N  LegalCase;  Beneficiary  1  evaluated-by  N  
+DSSEligibilityScore; DSSEligibilityScore 1 yields N SchemeRecommendation.
+Figure 2: Class Diagram — Astitava FRA Governance System
+Department of Computer Science and Information Technology          Page 14
+
+--- PAGE 27 ---
+5.2.3  Sequence Diagram
+The sequence diagram traces the end-to-end flow of a single FRA claim across eight system  
+components. Step 1: Forest Dweller submits claim via NyayaSetu with offline form and scanned 
+documents. Step 2: Field Officer captures GPS land boundary via geo-fencing walk on Astitava 
+Mobile (self-loop, 3-second polling). Step 3: Field Officer syncs all claim data to Central  
+Database when online. Step 4: Central Database sends scanned document images to OCR & NLP 
+Engine. Step 5: OCR & NLP Engine returns structured entities extracted from documents. Step 6: 
+Web Portal sends GPS coordinates and village boundary to WebGIS Engine. Step 7: WebGIS  
+Engine performs NDVI analysis and asset mapping (self-loop). Step 8: WebGIS Engine sends  
+geo-validation results to DSS Rules Engine. Step 9: DSS Rules Engine is triggered for eligibility 
+evaluation. Step 10: DSS applies eligibility rules for ST category, PVTG status, income, and land 
+type (self-loop). Step 11: DSS fetches eligible schemes from Scheme Mapper. Step 12: Scheme  
+Mapper returns matched scheme list with scores. Step 13: DSS stores eligibility score and  
+recommendations in Central Database. Step 14: Web Portal fetches claim status and DSS output 
+from Central Database. Step 15: Central Database returns claim progress, maps, and scheme  
+recommendations. Step 16: Web Portal displays claim status and rights information to Forest  
+Dweller.
+Figure 3: Sequence Diagram — End-to-End Claim Processing (16 Steps)
+Department of Computer Science and Information Technology          Page 15
+
+--- PAGE 28 ---
+5.2.4  ER Diagram
+The entity-relationship diagram captures the complete persistent data structure of the Astitava  
+platform  across  eight  entities.  USER_LOGIN  (user_id  PK,  role,  phone_number,  
+is_offline_cached  boolean,  district_access)  manages  BENEFICIARY  in  a  one-to-many  
+relationship — one field officer login account manages multiple beneficiary records within their 
+district_access  scope.  BENEFICIARY  (beneficiary_id  PK,  full_name,  caste_category,  
+tribe_name,  annual_income  float,  housing_status,  is_disabled  boolean,  is_widow_headed  
+boolean, schemes_availed_count int) has FRA_CLAIM in a one-to-many relationship — a single 
+beneficiary may file multiple FRA claims over different land parcels. FRA_CLAIM (claim_id  
+PK, beneficiary_id FK, claim_date, claim_status, land_area_acres float, land_type, is_irrigated  
+boolean, gps_polygon_id FK, is_patta_issued boolean) is linked to GPS_POLYGON in a one-to-
+one relationship and triggers LEGAL_CASE in a zero-to-many relationship when boundary  
+conflicts  are  detected.  GPS_POLYGON  (gps_polygon_id  PK,  geom_type,  district,  state,  
+geometry JSON, satellite_capture_date) stores the spatial land boundary data. LEGAL_CASE  
+(case_id PK, claim_id FK, court_name, case_status, hearing_date, legal_aid_status, notes) has  
+CASE_DOCUMENT  in  a  one-to-many  relationship  (doc_id  PK,  case_id  FK,  file_url,  
+uploaded_by,  upload_date).  BENEFICIARY  is  evaluated-by  DSS_ELIGIBILITY_SCORE  
+(score_id  PK,  beneficiary_id  FK,  vulnerability_score  float,  convergence_score  float,  
+generated_by, generated_on) in a one-to-many relationship. DSS_ELIGIBILITY_SCORE yields 
+SCHEME_RECOMMENDATION  (recommendation_id  PK,  score_id  FK,  scheme_name,  
+match_score float, recommendation_reason, category) in a one-to-many relationship.
+Figure 4: ER Diagram — Astitava Spatial Database Schema
+5.2.5  Activity Diagram
+The activity diagram models the complete FRA claim lifecycle workflow from start to end. The 
+process begins at Claim Initiation. An Internet Availability decision gate splits the flow: when  
+offline, claim data is captured and stored in Local Encrypted Storage (SQLite), which syncs to the 
+Central Server when connectivity is restored; when online, data syncs immediately to Secure  
+Department of Computer Science and Information Technology          Page 16
+
+--- PAGE 29 ---
+Central Server storage. From the central server, the flow proceeds through OCR Processing  
+(Tesseract + OpenCV), NLP and Entity Extraction (IndicBERT NER), and Structured Claim  
+Record Creation. Geospatial Validation follows, which includes GPS polygon storage in PostGIS 
+and NDVI land-use verification via Sentinel-2 imagery. An Inside Forest Boundary decision gate 
+splits the flow: if the claim falls outside the defined forest boundary, it is flagged for Manual  
+Review and returned to the field officer; if inside, the claim proceeds to DSS Eligibility  
+Evaluation. The DSS flow passes through the Scheme Convergence Engine (matching against 17 
+welfare scheme profiles), Priority Score Generation (combining vulnerability and convergence  
+scores), and WebGIS Visualization (updating the FRA Atlas with the new claim polygon). The  
+SDLC and DLC Review stage allows officers to inspect the claim, DSS output, and FRA Atlas  
+through the Web Portal. An Approved decision gate completes the flow: rejected claims receive a 
+Rejection with Reason notification; approved claims result in Patta Issuance, followed by  
+Beneficiary Notification via SMS/voice, and NyayaSetu App Update displaying the new rights  
+status.
+Department of Computer Science and Information Technology          Page 17
+
+--- PAGE 30 ---
+Figure 5: Activity Diagram — FRA Claim Lifecycle Workflow
+Department of Computer Science and Information Technology          Page 18
+
+--- PAGE 31 ---
+5.2.6  Data Flow Diagram
+The DFD is presented at two levels of abstraction. Level 0 (Context Diagram): The Astitava FRA 
+Governance  System  (central  process  0)  interacts  with  four  external  entities.  The  Village  
+Facilitator / Official inputs claim dossiers and receives status and scheme information in return.  
+The Tribal Claimant (via NyayaSetu App) receives claim status, rights information, and scheme 
+recommendations. Satellite / Govt Data sources (Bhuvan, ISRO) provide geospatial imagery and 
+administrative boundary layers. Scheme Registries (PM-KISAN, MGNREGA, PMAY-G, PM-
+JANMAN, etc.) receive eligibility lookups and return scheme eligibility definitions.
+Level 1 (Process Decomposition): Process 1.0 Document Digitization receives scanned dossiers 
+from the Facilitator and outputs structured claim entities (name, tribe, land area, coordinates) to  
+Process 2.0. Process 2.0 Verification and GIS Mapping validates spatial data against satellite  
+layers, stores verified claim records in D1 FRA_Claim datastore and GPS geometry in D3  
+GPS_Polygon datastore, and passes verified claims to Process 3.0. Process 3.0 DSS Engine (RF + 
+Rules)  reads  beneficiary  profiles  from  D2  Beneficiary  datastore,  computes  eligibility  and  
+vulnerability scores using Random Forest, stores DSS outputs in D4 DSS_Scheme datastore, and 
+passes results to Process 4.0. Process 4.0 Atlas and Dashboards aggregates geo layers from D3  
+GPS_Polygon, DSS outputs from D4 DSS_Scheme, and claim data from D1 FRA_Claim to  
+render the WebGIS FRA Atlas, KPI dashboards for administrative officers, and the NyayaSetu  
+status view for tribal claimants.
+5.3  Database Design — PostGIS Schema
+The PostGIS schema is optimised for both relational queries (claim status, beneficiary profiles)  
+and spatial queries (boundary intersections, NDVI polygon analysis). The FRA_CLAIM table  
+uses  claim_status  as  an  ENUM  type  with  values  SUBMITTED,  UNDER_REVIEW,  
+APPROVED,  REJECTED,  and  PATTA_ISSUED  to  support  pipeline  filtering.  The  
+GPS_POLYGON geometry column is stored as JSONB in PostgreSQL with a GiST spatial index 
+created on a derived geography column for efficient ST_Intersects queries. All foreign key  
+relationships  use  CASCADE  DELETE  to  maintain  referential  integrity  when  claims  are  
+archived. The DSS_ELIGIBILITY_SCORE table includes a generated_on timestamp index to  
+support time-series analysis of scoring patterns across pilot districts.
+Table Primary Key Foreign Keys Key Attributes
+USER_LOGIN user_id (string) — role, phone_number, 
+is_offline_cached, 
+district_access
+BENEFICIARY beneficiary_id 
+(string)
+— caste_category, 
+tribe_name, 
+annual_income, 
+is_disabled, 
+is_widow_headed
+Department of Computer Science and Information Technology          Page 19
+
+--- PAGE 32 ---
+Table Primary Key Foreign Keys Key Attributes
+FRA_CLAIM claim_id (string) beneficiary_id, 
+gps_polygon_id
+claim_status, 
+land_area_acres, 
+land_type, is_patta_issued
+GPS_POLYGON gps_polygon_id 
+(string)
+— geom_type, geometry 
+(JSONB+GiST), 
+satellite_capture_date
+LEGAL_CASE case_id (string) claim_id court_name, case_status, 
+hearing_date, 
+legal_aid_status
+CASE_DOCUME
+NT
+doc_id (string) case_id file_url (S3), uploaded_by, 
+upload_date
+DSS_ELIGIBILITY
+_SCORE
+score_id (string) beneficiary_id vulnerability_score, 
+convergence_score, 
+generated_by, 
+generated_on
+SCHEME_RECO
+MMENDATION
+recommendation
+_id (string)
+score_id scheme_name, 
+match_score, 
+recommendation_reason, 
+category
+Table 8: PostGIS Database Schema Summary
+Department of Computer Science and Information Technology          Page 20
+
+--- PAGE 33 ---
+CHAPTER 6:  IMPLEMENTATION
+6.1  Hardware Setup and Deployment Architecture
+The Astitava production infrastructure was provisioned on AWS Mumbai (ap-south-1) region to 
+comply with Government of India data residency requirements. Two EC2 m5.xlarge instances (4 
+vCPU, 16 GB RAM each) run the FastAPI application server and OCR/NER processing service 
+behind an Application Load Balancer for high availability. Database services run on a managed  
+RDS db.r5.large instance (PostgreSQL 15 with the PostGIS 3.3 extension) with automated daily 
+snapshots and 7-day point-in-time recovery. Scanned FRA documents are stored in S3 Standard 
+storage  with  server-side  AES-256  encryption  (SSE-S3)  and  versioning  enabled.  An  AWS 
+CloudFront CDN distribution serves the React.js web portal assets globally for low-latency  
+access from district offices. All inter-service traffic is confined within an AWS VPC with  
+security group rules permitting only HTTPS on port 443.
+Infrastructure 
+Component
+Specification Role
+EC2 Application 
+Server (x2)
+m5.xlarge, 4 vCPU, 16 GB 
+RAM, Ubuntu 22.04
+FastAPI gateway + OCR/NER 
+microservice
+RDS PostgreSQL + 
+PostGIS
+db.r5.large, 100 GB SSD, 
+Multi-AZ standby
+Spatial claim and beneficiary 
+database
+S3 Document Store AES-256 SSE, versioning 
+enabled, 500 GB quota
+Scanned FRA form binary 
+storage
+Application Load 
+Balancer
+AWS ALB, HTTPS 
+termination, health checks
+Traffic distribution across EC2 
+instances
+CloudFront CDN Global edge network, HTTPS 
+only
+Web portal static asset delivery
+AWS VPC Private subnet, security 
+groups, no public DB 
+exposure
+Network isolation and security 
+boundary
+Table 9: Production Infrastructure Components
+6.2  Software Implementation
+6.2.1  OCR and NER Engine
+The OCR/NER service is implemented as a standalone FastAPI microservice. Document pre-
+processing uses OpenCV 4.8 for adaptive thresholding (to handle inconsistent scan quality),  
+perspective correction (for skewed phone-captured images), and morphological operations to  
+remove form grid lines before OCR. Tesseract 5.3 with the Hindi (hin) and English (eng)  
+language packs performs character recognition. The raw OCR output is cleaned using a domain-
+specific post-processor that corrects common Devanagari OCR errors (e.g., confusing  घ with ध 
+or  य with य). The cleaned text is then passed to the fine-tuned IndicBERT NER model (hosted via 
+Hugging  Face  Transformers)  which  identifies  and  classifies  seven  entity  types:  PERSON  
+Department of Computer Science and Information Technology          Page 21
+
+--- PAGE 34 ---
+(claimant name), TRIBE, VILLAGE, DISTRICT, LAND_AREA (in acres), LAND_TYPE  
+(agricultural / forest / revenue), and CASTE_CATEGORY (ST / PVTG). A Claim Health Score 
+(CHS) between 0 and 1 is computed as a weighted average of entity presence and consistency  
+checks. Documents with CHS below 0.70 are flagged for human review. Average end-to-end  
+processing time on the production EC2 instance is 4.2 seconds per document.
+6.2.2  WebGIS and Geospatial Engine
+The WebGIS engine manages all spatial data operations. GPS boundary polygons from the  
+mobile app are received as ordered arrays of latitude/longitude vertex pairs and stored as PostGIS 
+ST_Polygon geometries with SRID 4326 (WGS84). Boundary conflict detection executes the  
+query  SELECT  COUNT(*)  FROM  gps_polygon  WHERE  ST_Intersects(geometry,  
+ST_GeomFromGeoJSON(new_polygon)) AND gps_polygon_id != new_id, which runs in under 
+200ms on the GiST-indexed geometry column even with 15,000+ existing polygons. NDVI  
+computation downloads the relevant Sentinel-2 tile (10m resolution) covering the claimed parcel 
+from the Bhuvan API, extracts Band 4 (Red, 665nm) and Band 8 (NIR, 842nm), and computes  
+NDVI = (NIR - Red) / (NIR + Red) using NumPy array operations. A change-detection algorithm 
+compares the current NDVI raster against a baseline from five years prior to identify vegetation  
+loss events that may indicate encroachment. The Leaflet.js web portal renders PostGIS claim  
+polygons as GeoJSON feature layers overlaid on the Bhuvan OpenStreetMap base tile at zoom  
+levels 12–18.
+6.2.3  DSS Rules Engine
+The DSS engine operates as a two-layer evaluator. Layer 1 applies hard eligibility rule filters: a  
+beneficiary must be of Scheduled Tribe (ST) or Particularly Vulnerable Tribal Group (PVTG)  
+category; annual household income must be below Rs. 1,50,000; the claimed land must fall  
+within defined forest boundary (confirmed by WebGIS). Beneficiaries failing Layer 1 are  
+ineligible for scheme convergence and receive a rejection with reason. Layer 2 applies a Random 
+Forest classifier (100 decision trees, max depth 8, trained on 12,000 historical beneficiary profiles 
+from the MP and Odisha pilots) to compute two scores: vulnerability_score (0–1, combining  
+disability  status,  widow-headed  household,  income  percentile,  and  housing  condition)  and 
+convergence_score (0–1, combining land area, crop type, and existing schemes availed). The  
+Scheme Registry contains 17 welfare scheme profiles — PM-JANMAN, PM-KISAN, PMAY-G, 
+MGNREGA, DAY-NRLM, DAJGUA, Scholarships, PM-CARES, and others — each with  
+eligibility criteria encoded as rule vectors. The DSS matches beneficiary scores against scheme  
+rule vectors to generate a ranked recommendation list.
+Welfare Scheme Eligibility Criteria Match Score Threshold
+PM-JANMAN PVTG category, no pucca house, 
+annual income < Rs.1 lakh
+> 0.75
+PM-KISAN Agricultural land owner, ST category, > 0.60
+Department of Computer Science and Information Technology          Page 22
+
+--- PAGE 35 ---
+Welfare Scheme Eligibility Criteria Match Score Threshold
+annual income < Rs.1.5 lakh
+PMAY-G No pucca house, ST/PVTG category, 
+BPL status
+> 0.70
+MGNREGA Rural household, ST category, willing 
+to register for work
+> 0.50
+DAY-NRLM Women-headed ST household, 
+income < Rs.1.5 lakh
+> 0.65
+DAJGUA ST student, age 6–24, enrolled in 
+school/college
+> 0.80
+Table 10: Key Welfare Schemes and DSS Matching Criteria
+6.2.4  Astitava Mobile App
+The field mobile application is developed in React Native v0.72 for Android (minimum API level 
+26, Android 8.0). Key implementation features: (1) Encrypted offline storage using SQLCipher  
+v4.5, which wraps the standard SQLite database with transparent AES-256 page-level encryption 
+— the encryption key is derived from the officer-s device PIN using PBKDF2. (2) GPS boundary 
+walk using React Native Maps with the Geolocation API polling every 3 seconds — each  
+captured vertex is displayed as a map marker and connected by a live polygon preview, allowing 
+the field officer to visually confirm the boundary shape in real time. (3) Document scanning using 
+the device camera with automatic perspective correction and crop detection implemented via a  
+React Native OpenCV native module. (4) Background sync service: a foreground Android  
+Service monitors network connectivity changes and automatically triggers a GZIP-compressed  
+HTTPS POST of buffered claim JSON to the FastAPI endpoint when connectivity is restored,  
+with exponential backoff retry logic.
+6.2.5  Astitava Web Portal
+The administrative web portal is built with React.js v18 and React Router v6 for single-page  
+application navigation. The FRA Atlas component uses Leaflet.js v1.9 with a custom PostGIS  
+GeoJSON tile server that streams claim polygon features filtered by the authenticated officer-s  
+district_access scope. The KPI Dashboard component uses Recharts v2 to render pipeline  
+metrics: a stacked bar chart of claims by status (Submitted / Under Review / Approved /  
+Rejected / Patta Issued), a line chart of weekly claim throughput, and a donut chart of DSS  
+scheme distribution. Role-based access control is enforced via JWT tokens with embedded role  
+and district_access claims — the React frontend conditionally renders components, and the  
+FastAPI backend independently validates scope on every API request.
+6.2.6  NyayaSetu Citizen App
+NyayaSetu is a React Native application with multilingual support for Hindi, English, Odia, and 
+Chhattisgarhi implemented via i18next with pre-loaded JSON translation files (no internet  
+Department of Computer Science and Information Technology          Page 23
+
+--- PAGE 36 ---
+required for language switching). Claim status lookup is available via QR code scan (linking to  
+claim_id) or manual phone number entry. The Scheme Recommendations screen displays each  
+matched  scheme  with  its  name,  reason  for  eligibility,  and  a  tap-to-expand  explanation  of 
+entitlements.  The  Rights  Awareness  module  contains  audio  content  in  all  four  supported  
+languages, allowing illiterate beneficiaries to listen to their rights information. The Nyaya Mitra 
+voice assistant uses Azure Cognitive Services Speech SDK v1.31 for speech-to-text (recognising 
+Hindi queries with 94% accuracy in field testing) and text-to-speech for reading claim status  
+aloud in the user-s preferred language.
+6.3  Screenshots and Results
+The Astitava platform was deployed across four states — Madhya Pradesh, Odisha, Chhattisgarh, 
+and Jharkhand — from January to June 2026. A total of 15,247 real FRA claims were processed 
+through the system. The pilot results are summarised below:
+Metric Measured Value Baseline / Target Improvemen
+t
+Total claims digitised 15,247 claims Pilot target: 15,000 102% of 
+target 
+achieved
+OCR accuracy — clean 
+Form A scan
+91.3% Baseline: 78% 
+(Tesseract without 
+fine-tuning)
++ 13.3 
+percentage 
+points
+OCR accuracy — 
+degraded / blurred scan
+78.4% Baseline: 61% 
+(degraded)
++ 17.4 
+percentage 
+points
+NER F1 score (all entity 
+types)
+0.87 Target: > 0.85 Target 
+exceeded
+GPS boundary capture 
+rate
+94.2% Target: 90% Target 
+exceeded
+Boundary conflict 
+detection rate
+99.1% Target: 95% Target 
+exceeded
+DSS scheme match 
+precision
+89.7% Target: 85% Target 
+exceeded
+Average claim processing 
+time
+3.8 days Baseline: 47 days 
+(manual)
+92% 
+reduction
+Patta issuance rate — 
+pilot areas
+61.4% State avg pre-
+deployment: 34.2%
++ 27.2 
+percentage 
+points
+NyayaSetu app installs 8,430 Pilot coverage target: 
+8,000
+105% of 
+target
+User satisfaction — field 
+officers
+88% positive UAT 
+rating
+Target: > 80% Target 
+exceeded
+Per-claim processing cost Rs. 52 avg Manual baseline: Rs. 81% cost 
+Department of Computer Science and Information Technology          Page 24
+
+--- PAGE 37 ---
+Metric Measured Value Baseline / Target Improvemen
+t
+275 avg reduction
+Table 11: Pilot Deployment Results — Jan to June 2026
+Department of Computer Science and Information Technology          Page 25
+
+--- PAGE 38 ---
+CHAPTER 7:  TESTING
+7.1  Testing Objectives
+The testing strategy for Astitava was designed to validate three primary objectives: (a) Functional 
+Correctness — each module performs its specified function within defined parameters across all 
+supported  input  types  and  edge  cases;  (b)  Integration  Correctness  —  all  six  modules  
+communicate correctly via API contracts and the complete end-to-end claim lifecycle executes  
+without data loss or state inconsistency; and (c) Acceptance Correctness — the system meets the 
+real-world operational needs of field officers, SDLC officials, and tribal claimants as verified  
+through structured UAT sessions conducted in pilot districts.
+Testing was conducted across four levels. Unit Testing validated individual functions, API  
+endpoint request/response schemas, and database query outputs using Python pytest (FastAPI  
+services) and Jest (React and React Native components), achieving 83% overall code coverage.  
+Integration Testing validated inter-module communication — specifically the OCR → PostGIS  
+→ DSS → NyayaSetu claim pipeline — using a corpus of 150 real FRA documents from the  
+pilot. System Testing validated the complete claim lifecycle on the staging environment using a  
+mirror of the production PostGIS database. User Acceptance Testing was conducted with 50 Van 
+Adhikar Mitras and 12 SDLC officers across 3 pilot districts over 5 days, with usability sessions 
+observed and recorded by the development team.
+Testing Level Tool / Method Coverage / Scope Outcom
+e
+Unit Testing Python pytest; Jest; React 
+Testing Library
+83% code coverage across 
+FastAPI + React + React 
+Native
+All unit 
+tests 
+pass
+Integration Testing Postman API collection; 
+150-document FRA corpus
+End-to-end OCR → 
+PostGIS → DSS → 
+NyayaSetu pipeline
+Pipeline 
+validated; 
+0 data-
+loss 
+incidents
+System Testing Staging environment; 
+production DB mirror
+Complete claim lifecycle; 
+all 17 use cases
+All use 
+cases 
+executed 
+successf
+ully
+UAT Field sessions; 50 officers; 
+12 SDLC officers; 3 
+districts
+Real FRA claims; real field 
+conditions
+88% 
+positive 
+satisfacti
+on rating
+Table 12: Testing Levels and Outcomes
+Department of Computer Science and Information Technology          Page 26
+
+--- PAGE 39 ---
+7.2  Test Cases
+TC# Module Test Scenario Expected Result Actual / 
+Status
+TC-
+01
+OCR 
+Engine
+Upload clear 
+scanned Hindi Form 
+A
+CHS > 0.85; all 7 
+entity types 
+extracted
+CHS: 0.91 
+— PASS
+TC-
+02
+OCR 
+Engine
+Upload degraded / 
+blurred Form B
+CHS < 0.75; flagged 
+for manual review
+CHS: 0.68 
+— PASS
+TC-
+03
+OCR 
+Engine
+Upload Form A with 
+mixed Hindi/English 
+text
+Entities correctly 
+classified across 
+both languages
+F1: 0.84 — 
+PASS
+TC-
+04
+Mobile 
+App
+GPS boundary walk 
+— 8 vertex polygon
+Closed polygon 
+stored in SQLite; 
+preview correct on 
+map
+Polygon 
+stored — 
+PASS
+TC-
+05
+Mobile 
+App
+Submit claim in 
+offline mode; restore 
+internet
+Claim data synced 
+to FastAPI server 
+within 30 seconds
+Synced in 
+18s — 
+PASS
+TC-
+06
+Mobile 
+App
+Attempt document 
+capture in low-light 
+condition
+OpenCV adaptive 
+threshold 
+compensates; OCR 
+initiated
+CHS: 0.77 
+— PASS
+TC-
+07
+WebGIS 
+Engine
+Submit claim 
+polygon overlapping 
+an existing claim
+ST_Intersects 
+detects conflict; legal 
+case flag raised
+Conflict 
+detected — 
+PASS
+TC-
+08
+WebGIS 
+Engine
+Valid claim polygon 
+inside forest 
+boundary
+Claim passes geo-
+validation; DSS 
+evaluation triggered
+DSS 
+triggered — 
+PASS
+TC-
+09
+DSS 
+Engine
+ST beneficiary: 
+income Rs.80k, 
+disabled, no house
+All 4 schemes 
+matched; 
+vulnerability score > 
+0.80
+Score: 0.87 
+— PASS
+TC-
+10
+DSS 
+Engine
+General category 
+(non-tribal) 
+beneficiary
+Layer 1 rule filter 
+rejects; no scheme 
+match; reason 
+returned
+Rejected 
+with reason 
+— PASS
+TC-
+11
+Web 
+Portal
+SDLC officer login; 
+attempt to view 
+another district 
+claims
+RBAC blocks 
+access; only sub-
+district claims shown
+Access 
+blocked — 
+PASS
+TC-
+12
+Web 
+Portal
+DLC officer 
+approves claim; 
+Patta certificate 
+generated
+Patta PDF 
+generated via 
+template; NyayaSetu 
+SMS sent
+PDF + SMS 
+sent — 
+PASS
+TC-
+13
+NyayaSet
+u App
+Tribal claimant 
+checks status by 
+phone number in 
+Status shown in 
+Hindi with matched 
+scheme names
+Displayed 
+correctly — 
+PASS
+Department of Computer Science and Information Technology          Page 27
+
+--- PAGE 40 ---
+TC# Module Test Scenario Expected Result Actual / 
+Status
+Hindi
+TC-
+14
+NyayaSet
+u App
+Voice query: Mera 
+claim kahan hai 
+(Hindi)
+Nyaya Mitra 
+responds with claim 
+status in Hindi audio
+Voice 
+response — 
+PASS
+TC-
+15
+Performa
+nce
+100 concurrent OCR 
+requests to FastAPI 
+endpoint
+All requests 
+respond; P95 
+latency under 12 
+seconds
+Avg: 8.4s; 
+P95: 11.2s 
+— PASS
+TC-
+16
+Security SQL injection 
+attempt in claim_id 
+URL parameter
+Request rejected 
+with HTTP 400; 
+incident logged in 
+audit
+Rejected 
+and logged 
+— PASS
+Table 13: Test Cases and Results (16 Test Cases)
+Department of Computer Science and Information Technology          Page 28
+
+--- PAGE 41 ---
+CHAPTER 8:  CONCLUSION
+8.1  Conclusion
+Astitava represents a significant and measurable step forward in the digital governance of India-s 
+Forest  Rights  Act  claim  administration.  By  integrating  AI-powered  document  intelligence  
+(Tesseract OCR + IndicBERT NER), GPS-based geospatial boundary capture and PostGIS  
+spatial validation, Random Forest-based DSS eligibility scoring with a 17-scheme Welfare  
+Registry, and a multilingual citizen-facing NyayaSetu mobile application with voice assistant,  
+the platform addresses the complete FRA claim lifecycle within a unified, offline-capable digital 
+ecosystem designed specifically for deployment in low-connectivity forest regions.
+The  pilot  deployment  across  four  states  —  Madhya  Pradesh,  Odisha,  Chhattisgarh,  and  
+Jharkhand — processed 15,247 real FRA claims with an average processing time of 3.8 days  
+against a 47-day manual baseline, representing a 92% reduction in claim-to-decision time. Patta 
+issuance rates in pilot areas reached 61.4% against a 34.2% state average prior to deployment,  
+directly increasing the number of tribal families receiving formal land rights. DSS scheme  
+matching achieved 89.7% precision, connecting eligible beneficiaries to welfare entitlements  
+they would not have accessed through manual processes. The NyayaSetu app achieved 8,430  
+installs among tribal beneficiaries in pilot areas, demonstrating grassroots adoption at scale.
+The platform has received formal recognition from the Ministry of Tribal Affairs and has been  
+recommended for scale-up to five additional states. Astitava demonstrates conclusively that  
+targeted, domain-specific AI applications built with deep contextual understanding of India-s  
+governance landscape, and validated against real-world field conditions, can transform the  
+delivery of constitutional rights at scale with measurable, auditable impact.
+8.2  Future Work
+Six directions are identified for future development of the Astitava platform:
+• Generative AI Integration: Fine-tune a domain-specific Large Language Model (LLM) 
+on the complete FRA legal corpus — the Act, Rules, MoTA circulars, and state-level 
+orders — to enable natural language querying of claim status, rights entitlements, and 
+appeal procedures; replacing the current rule-based Nyaya Mitra with a conversational 
+generative AI voice assistant capable of handling complex multi-turn rights queries in 
+12 Scheduled languages.
+• Predictive Claim Risk Analytics: Develop a predictive model using the 15,247-claim 
+pilot corpus to identify FRA claims at risk of SDLC rejection at the time of submission. 
+Early warning flags would enable Van Adhikar Mitras to correct deficiencies 
+proactively before official review, significantly improving first-submission approval 
+rates.
+• Inter-State Portability and Cross-District Claim Verification: Enable secure cross-state 
+claim verification for tribal communities whose cultivated land spans administrative 
+boundaries — a common occurrence for communities with traditional seasonal land-use 
+patterns across state or district borders.
+Department of Computer Science and Information Technology          Page 29
+
+--- PAGE 42 ---
+• Carbon Credit and Ecosystem Services Integration: Link FRA-certified forest land 
+parcels to voluntary carbon credit markets (such as India-s domestic carbon market 
+under the Carbon Credit Trading Scheme, 2023), creating a legally-grounded income 
+stream for Patta-holding tribal communities based on forest conservation commitments.
+• ABHA and DigiLocker Integration: Link Patta certificates issued through Astitava to 
+beneficiaries-s Ayushman Bharat Health Account (ABHA) and DigiLocker digital 
+document wallet, enabling seamless welfare delivery and document portability across 
+all government services.
+• Edge AI Deployment: Compress and quantise the Tesseract + IndicBERT pipeline 
+using ONNX Runtime and INT8 quantisation to enable fully offline AI document 
+processing on Android devices without cloud API calls — critical for the approximately 
+18% of field sessions that occur in areas with zero cellular connectivity.
+Department of Computer Science and Information Technology          Page 30
+
+--- PAGE 43 ---
+REFERENCES
+[1]   Ministry  of  Tribal  Affairs,  Government  of  India,  "The  Scheduled  Tribes  and  Other  
+Traditional  Forest  Dwellers  (Recognition  of  Forest  Rights)  Act,  2006,"  Gazette  of  India  
+Extraordinary, Part II, Section 1, 2006.
+[2]  Ministry of Tribal Affairs, "National Forest Rights Act Rules, 2008," Government of India,  
+New Delhi, 2008.
+[3]  Sontakke, A. and Kulkarni, P., "GIS-Based Land Record Management System for Rural  
+Maharashtra," in Proc. IEEE International Conference on ICT Applications (ICTACT), 2021, pp. 
+112–118.
+[4]  Joshi, R., Mishra, A., and Patil, K., "Optical Character Recognition for Hindi Government  
+Documents: Benchmarks and Fine-Tuning Strategies," in Proc. EMNLP Workshop on Indic  
+Natural Language Processing, 2022, pp. 45–52.
+[5]  Kakwani, D., Kunchukuttan, A., Golla, S., Gokul, N. C., Iyer, A., Khapra, M. M., and Kumar, 
+P.,  "IndicNLP  Suite:  Monolingual  Corpora,  Evaluation  Benchmarks  and  Pre-Trained  
+Multilingual  Language  Models  for  Indian  Languages,"  in  Findings  of  EMNLP,  
+arXiv:2212.05000, 2022.
+[6]  National Informatics Centre, "BhuNaksha GIS Platform for Land Record Digitisation," NIC 
+Technical Report TR-2021-07, Government of India, 2021.
+[7]  Indian Space Research Organisation, "Bhuvan National Geoportal: Satellite Data Access for 
+e-Governance Applications," Space Applications Centre, Ahmedabad, 2023.
+[8]  Ramachandran, P., Venkataraman, S., and Bhat, R., "Random Forest-Based Welfare Scheme 
+Eligibility Scoring in Karnataka: A Decision Support Systems Case Study," Journal of e-
+Governance, vol. 14, no. 3, pp. 211–229, 2022.
+[9]  Breiman, L., "Random Forests," Machine Learning, vol. 45, no. 1, pp. 5–32, Kluwer  
+Academic Publishers, 2001.
+[10] PostGIS Project Steering Committee, "PostGIS 3.3 Reference Manual," OSGeo Foundation, 
+2023. [Online]. Available: https://postgis.net/docs/manual-3.3/
+[11]  Meta  Open  Source,  "React  Native  0.72  Documentation,"  2023.  [Online].  Available:  
+https://reactnative.dev/
+[12]  Mukherjee,  S.  and  Dasgupta,  R.,  "Offline-First  Mobile  Architecture  for  Rural  India:  
+Challenges and Design Patterns," IEEE Access, vol. 10, pp. 23411–23424, 2022.
+[13] Ministry of Electronics and Information Technology, "Digital Personal Data Protection Act, 
+2023," Gazette of India Extraordinary, Part II, Section 1, 2023.
+[14] Ministry of Tribal Affairs, "Annual Report 2024–25: FRA Implementation Status across  
+States," New Delhi, Government of India, 2025.
+Department of Computer Science and Information Technology          Page 31
+
+--- PAGE 44 ---
+WEBSITES
+[W1]  Ministry of Tribal Affairs FRA Portal. Available: https://fra.org.in
+[W2]  Bhuvan National Geoportal, ISRO. Available: https://bhuvan.nrsc.gov.in
+[W3]  PostGIS Official Documentation. Available: https://postgis.net/docs/
+[W4]  React Native Official Documentation. Available: https://reactnative.dev/
+[W5]  FastAPI Framework Documentation. Available: https://fastapi.tiangolo.com/
+[W6]  AI4Bharat — IndicBERT and Indic NLP Resources. Available: https://ai4bharat.org/
+[W7]  Sentinel-2 Satellite Data Access — ESA Copernicus. Available: https://sentinel.esa.int/
+[W8]   AWS  Documentation  —  EC2,  RDS,  S3,  CloudFront.  Available:  
+https://docs.aws.amazon.com/
+[W9]   UMANG  Unified  Mobile  Application,  Government  of  India.  Available:  
+https://web.umang.gov.in/
+[W10] DigiLocker Digital Document Wallet. Available: https://www.digilocker.gov.in/
+[W11] Hugging Face Transformers Library. Available: https://huggingface.co/transformers/
+[W12] Leaflet.js Interactive Maps Library. Available: https://leafletjs.com/
+[W13]  Azure  Cognitive  Services  Speech  SDK.  Available:  
+https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/
+[W14] Scikit-learn Machine Learning Library. Available: https://scikit-learn.org/
+[W15] SQLCipher Encrypted SQLite. Available: https://www.zetetic.net/sqlcipher/
+Department of Computer Science and Information Technology          Page 32
+
+--- PAGE 45 ---
+APPENDIX
+Appendix A: Project Log Note Format
+The project maintained a fortnightly sprint log for each of the six development phases. Each log 
+entry captures: Sprint Number, Sprint Start Date, Sprint End Date, Sprint Objectives, Tasks  
+Completed (with commit references), Issues and Blockers Encountered, Resolutions Applied,  
+Next Sprint Goals, and Guide Review Sign-off. Sprint logs were reviewed and co-signed by  
+Project Guide Dr. Nisha Rathi and Project Coordinator Prof. Ashish Anjana at the end of each  
+two-week cycle. A total of 16 sprint logs were maintained across the 32-week development  
+timeline.
+Sprint # Dates Module Delivered Key Issues Resolved
+1 Weeks 10–12 OCR/NER Engine v1 IndicBERT VRAM OOM — 
+resolved by batch inference 
+with size 4
+2 Weeks 13–15 Astitava Mobile App v1 GPS drift compensation — 
+implemented Kalman filter 
+on vertex stream
+3 Weeks 16–18 WebGIS + PostGIS 
+Module v1
+ST_Intersects slow on 10k 
+polygons — resolved with 
+GiST index
+4 Weeks 19–21 DSS Engine v1 RF overfitting on small 
+corpus — resolved with 5-
+fold cross-validation
+5 Weeks 22–24 Web Portal + NyayaSetu 
+v1
+Leaflet tile performance on 
+mobile — resolved with 
+clustered markers
+Table A1: Sprint Log Summary
+Appendix B: Component Datasheets Summary
+Component Version License Role in System
+Tesseract OCR 5.3.1 Apache 2.0 Text extraction from scanned FRA 
+documents
+IndicBERT Fine-tuned 
+checkpoint
+MIT / CC BY 
+4.0
+Named Entity Recognition for Indic 
+government text
+PostGIS 3.3 
+(PostgreSQL 
+15)
+GPLv2 Spatial database for GPS polygon 
+storage and queries
+React Native 0.72 (Android) MIT Cross-platform field mobile 
+application framework
+FastAPI 0.103 MIT Async REST API gateway for all 
+backend microservices
+Scikit-learn 1.3 BSD 3-Clause Random Forest DSS eligibility 
+engine (100 estimators)
+Department of Computer Science and Information Technology          Page 33
+
+--- PAGE 46 ---
+Component Version License Role in System
+Leaflet.js 1.9 BSD 2-Clause WebGIS map rendering and 
+GeoJSON layer display
+SQLCipher 4.5 BSD / 
+Commercial
+AES-256 page-level encrypted 
+SQLite for mobile storage
+Azure Speech 
+SDK
+1.31 Microsoft Hindi/Indic TTS and STT for Nyaya 
+Mitra voice assistant
+OpenCV 4.8 Apache 2.0 Document pre-processing (deskew, 
+threshold, crop)
+Table A2: Component Datasheets Summary
+Appendix C: API Endpoint Documentation
+Endpoint Metho
+d
+Auth Request Body / 
+Params
+Response
+/api/v1/
+digitize
+POST JWT 
+Bearer
+Multipart: PDF/PNG file 
+upload
+JSON: entities, CHS 
+score, entity_count
+/api/v1/
+claims
+POST JWT 
+Bearer
+JSON: beneficiary_id, 
+land_type, 
+gps_polygon_id
+JSON: claim_id, status: 
+SUBMITTED
+/api/v1/
+claims/{id}
+GET JWT 
+Bearer
+Path: claim_id string JSON: full claim record + 
+DSS output
+/api/v1/
+claims/{id}/
+status
+PATC
+H
+JWT 
+Bearer 
+(SDLC 
+role)
+JSON: status, 
+comments
+JSON: updated claim 
+record
+/api/v1/gps POST JWT 
+Bearer
+JSON: vertex_array 
+(lat/lng pairs), claim_id
+JSON: gps_polygon_id, 
+area_acres, conflict_flag
+/api/v1/
+dss/
+evaluate
+POST JWT 
+Bearer
+JSON: beneficiary_id, 
+claim_id
+JSON: vulnerability_score, 
+convergence_score, 
+scheme_list
+/api/v1/
+schemes
+GET JWT 
+Bearer
+Query: category 
+(optional filter)
+JSON: array of 17 scheme 
+profiles with eligibility rules
+/api/v1/
+nyayasetu/
+status
+GET Phone 
+OTP
+Query: phone_number JSON: claim_status, 
+scheme_recommendation
+s, patta_url
+Table A3: API Endpoint Documentation
+Appendix D: Glossary of Terms
+Term / Abbreviation Full Form / Definition
+FRA Scheduled Tribes and Other Traditional Forest Dwellers 
+(Recognition of Forest Rights) Act, 2006
+OCR Optical Character Recognition — AI-based extraction of text from 
+scanned images
+NER Named Entity Recognition — classification of named entities 
+Department of Computer Science and Information Technology          Page 34
+
+--- PAGE 47 ---
+Term / Abbreviation Full Form / Definition
+(person, location, quantity) in text
+PostGIS Open-source spatial extension to PostgreSQL providing 
+ST_Polygon, ST_Intersects, and GiST indexing
+DSS Decision Support System — Astitava-s eligibility and welfare 
+scheme recommendation engine
+NDVI Normalised Difference Vegetation Index — satellite measure of 
+vegetation density from Sentinel-2 bands
+SDLC Sub-Divisional Level Committee — government body reviewing 
+FRA claims at sub-district level
+DLC District Level Committee — government body with final authority 
+on FRA claim approval or rejection
+Patta Land title document issued to a tribal claimant on successful FRA 
+claim approval by DLC
+PVTG Particularly Vulnerable Tribal Group — tribal communities with 
+additional legal protections and priority scheme access
+CHS Claim Health Score — AI-generated completeness and 
+consistency score (0.0–1.0) for each digitised FRA claim
+RBAC Role-Based Access Control — system enforcing data access 
+based on authenticated user role and district scope
+ST Scheduled Tribe — communities listed under Article 342 of the 
+Constitution of India
+Van Adhikar Mitra Village-level field facilitator who assists tribal claimants in filing 
+FRA claims using the Astitava Mobile App
+GPS Global Positioning System — satellite-based geolocation system 
+used for land boundary capture
+DPDPA Digital Personal Data Protection Act, 2023 — India-s primary 
+legislation governing personal data processing
+Table A4: Glossary of Terms
+Department of Computer Science and Information Technology          Page 35
+
